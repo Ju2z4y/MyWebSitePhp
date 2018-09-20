@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Curriculum vitae</a>
+                    <a class="nav-link" href="curriculum.php">Curriculum vitae</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Mes services</a>
@@ -17,7 +17,7 @@
                     <a class="nav-link" href="#">Mes réalisation</a>
                 </li>
             </ul>
-            <ul class=" navbar-nav m-auto">
+            <ul class=" navbar-nav ml-auto">
                 <li>
                     <form class="form-inline" action="/action_page.php">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -25,19 +25,5 @@
                     </form>
                 </li>
             </ul>
-            <ul class=" navbar-nav ml-auto">
-                <li>
-                    <form class="form-inline" action="/action_page.php">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">@</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username">
-                        </div>
-                    </form>
-                </li>
-            </ul>
-
-
         </div>
     </nav>

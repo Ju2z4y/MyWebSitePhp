@@ -49,7 +49,7 @@ require('includes/navbar.php');
           <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
-      <hr class="d-sm-none">
+      <hr class="d-sm-none">    
     </div>
     <div class="col-sm-8">
       <h2>TITLE HEADING</h2>
