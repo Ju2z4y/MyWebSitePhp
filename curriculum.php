@@ -38,7 +38,7 @@
             padding-left: 80px;
             padding-right: 20px;
             margin-left: -80px;
-            margin-top: 30px;   
+            margin-top: 30px;
             ;
         }
 
@@ -52,10 +52,16 @@
             margin-right: -80px;
             border-radius: 8px 8px 8px 8px;
         }
-        
+
         h6 {
             text-align: center;
             margin-top: 25px;
+        }
+
+        .imgButton {
+            width: 30px;
+            height: 30px;
+            border: none;
         }
 
     </style>
@@ -93,21 +99,44 @@ require('includes/navbar.php');
             <div class="extTitre"></div>
         </div>
         <div class="education">
-            <h2>Education</h2>
+            <button class="imgButtonDroite" style="background: url(icones/flecheDroite.png)" ... />
+            <button class="imgButtonBas" style="background: url(icones/flecheBas.png)" ... />
         </div>
         <div class="row separateur">
             <div class="titre" style="min-width: 232px">Past employement</div>
             <div class="extTitre"></div>
         </div>
         <div class="pastEmploy">
-            <h2>Past Employement</h2>
+            <a href="#demo" class="imgButtonDroite" data-toggle="collapse"><img src="icones/flecheDroite.png" /></a>
+            <a href="#demo" class="imgButtonBas" data-toggle="collapse"><img class="imgButtonBas" src="icones/flecheBas.png"/></a> Coucou
+            <div id="demo" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
         </div>
     </div>
 
     <div class="jumbotron text-center" style="margin-bottom:0">
         <p>Footer</p>
     </div>
+    <script>
+        $(document).ready(function() {
+            $(".imgButtonBas").hide();
+            // Activate Carousel with a specified interval
 
+            $(".imgButtonDroite").click(function(){
+                $(".imgButtonBas").show();
+                $(".imgButtonDroite").hide();
+            });
+            $(".imgButtonBas").click(function(){
+                $(".imgButtonDroite").show();
+                $(".imgButtonBas").hide();
+            });
+
+
+        });
+    </script>
 </body>
 
 </html>
