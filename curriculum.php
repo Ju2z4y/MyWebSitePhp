@@ -38,7 +38,7 @@
             padding-left: 80px;
             padding-right: 20px;
             margin-left: -80px;
-            margin-top: 30px;
+            margin-top: 30px;   
             ;
         }
 
@@ -51,6 +51,11 @@
             padding-right: 80px;
             margin-right: -80px;
             border-radius: 8px 8px 8px 8px;
+        }
+        
+        h6 {
+            text-align: center;
+            margin-top: 25px;
         }
 
     </style>
@@ -80,7 +85,8 @@ require('includes/navbar.php');
             <div class="extTitre"></div>
         </div>
         <div class="personalStatement">
-            <h2>contenu</h2>
+            <h6>Le latin est une langue italique de la famille des langues indo-européennes, parlée à l'origine dans le Latium et la Rome antique. Bien qu'il soit souvent considéré comme une langue morte, sa connaissance, voire son usage, se sont maintenus à l'université et dans le clergé.</h6>
+            <p>Durant l'Antiquité, le latin a été parlé dans tout le bassin méditerranéen, essentiellement dans les pays conquis par les Romains. Dans ces pays, il a parfois remplacé complètement les langues qui existaient avant comme en Gaule ou en Hispanie, ou bien ces langues ont subsisté comme en Grèce et en Bretagne.</p>
         </div>
         <div class="row separateur">
             <div class="titre">Education</div>
