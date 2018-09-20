@@ -21,22 +21,38 @@
             border-bottom: solid black 1px;
             margin-right: 20;
         }
-        
-        .photo{
+
+        .photo {
             text-align: right;
         }
 
-        .titre{
+        .separateur {
+            flex-wrap: nowrap;
+        }
+
+        .titre {
             background-color: black;
             color: white;
             border-radius: 0px 8px 8px 0px;
             padding: 8px;
-            padding-left: 120px;
+            padding-left: 80px;
             padding-right: 20px;
-            margin-left: -100px;
+            margin-left: -80px;
             margin-top: 30px;
+            ;
         }
-        
+
+        .extTitre {
+            background-color: gainsboro;
+            padding: 8px;
+            margin-left: 10px;
+            margin-top: 30px;
+            width: 100%;
+            padding-right: 80px;
+            margin-right: -80px;
+            border-radius: 8px 8px 8px 8px;
+        }
+
     </style>
 </head>
 
@@ -59,16 +75,23 @@ require('includes/navbar.php');
             </div>
             <div class="photo col-2"><img src="images/lama.jpg" alt="Logo" style="width:100px;"></div>
         </div>
-        <div class="row">
-            <div class="titre">Personnal Statement</div>
+        <div class="row separateur">
+            <div class="titre" style="min-width: 248px">Personnal Statement</div>
             <div class="extTitre"></div>
-        
         </div>
         <div class="personalStatement">
-            <h2>Personnal Statement</h2>
+            <h2>contenu</h2>
+        </div>
+        <div class="row separateur">
+            <div class="titre">Education</div>
+            <div class="extTitre"></div>
         </div>
         <div class="education">
             <h2>Education</h2>
+        </div>
+        <div class="row separateur">
+            <div class="titre" style="min-width: 232px">Past employement</div>
+            <div class="extTitre"></div>
         </div>
         <div class="pastEmploy">
             <h2>Past Employement</h2>
