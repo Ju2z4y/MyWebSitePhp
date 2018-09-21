@@ -1,6 +1,6 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a class="navbar-brand" href="index.php">
-            <img src="images/lama.jpg" alt="Logo" style="width:40px;">
+            <img src="images/photoID.png" alt="Logo" style="width:40px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>

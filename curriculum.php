@@ -64,6 +64,9 @@
             border: none;
         }
 
+        .conteneur {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -84,7 +87,7 @@ require('includes/navbar.php');
                 <div class="col-2">contact</div>
                 <div class="col-8"><strong>E-mail : </strong>julien.griffault90@gmail.com <strong>Tel : </strong>06 29 07 96 18</div>
             </div>
-            <div class="photo col-2"><img src="images/lama.jpg" alt="Logo" style="width:100px;"></div>
+            <div class="photo col-2"><img src="images/photoID.png" alt="Logo" style="width:100px;"></div>
         </div>
         <div class="row separateur">
             <div class="titre" style="min-width: 248px">Personnal Statement</div>
@@ -99,43 +102,62 @@ require('includes/navbar.php');
             <div class="extTitre"></div>
         </div>
         <div class="education">
-            <button class="imgButtonDroite" style="background: url(icones/flecheDroite.png)" ... />
-            <button class="imgButtonBas" style="background: url(icones/flecheBas.png)" ... />
+            <div class="conteneur">
+                <a class="arrow" href="#edu1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <strong>CGI</strong> - alternance <i class="right">2018-2021</i>
+                <div id="edu1" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="conteneur">
+                <a class="arrow" href="#edu2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                CGI - alternance <i class="right">2018-2021</i>
+                <div id="edu2" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
         </div>
         <div class="row separateur">
             <div class="titre" style="min-width: 232px">Past employement</div>
             <div class="extTitre"></div>
         </div>
         <div class="pastEmploy">
-            <a href="#demo" class="imgButtonDroite" data-toggle="collapse"><img src="icones/flecheDroite.png" /></a>
-            <a href="#demo" class="imgButtonBas" data-toggle="collapse"><img class="imgButtonBas" src="icones/flecheBas.png"/></a> Coucou
-            <div id="demo" class="collapse">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <div class="conteneur">
+                <p class="inline-block">
+                    <a class="arrow" href="#emp1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                    <strong>CGI</strong> 
+                </p>
+                <p class="date">
+                    <i>2018-2021</i>
+                </p>
+                <div id="emp1" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
             </div>
         </div>
     </div>
-
     <div class="jumbotron text-center" style="margin-bottom:0">
         <p>Footer</p>
     </div>
     <script>
         $(document).ready(function() {
-            $(".imgButtonBas").hide();
-            // Activate Carousel with a specified interval
-
-            $(".imgButtonDroite").click(function(){
-                $(".imgButtonBas").show();
-                $(".imgButtonDroite").hide();
+            $(".arrow").click(function() {
+                var img = $(this).find('img.imgButton')[0]; // the actual DOM element for the image
+                console.log('img:' + img);
+                if (img.src.indexOf('flecheDroite.png') != -1) {
+                    img.src = 'icones/flecheBas.png';
+                } else {
+                    img.src = 'icones/flecheDroite.png';
+                }
             });
-            $(".imgButtonBas").click(function(){
-                $(".imgButtonDroite").show();
-                $(".imgButtonBas").hide();
-            });
-
-
         });
+
     </script>
 </body>
 
