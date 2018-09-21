@@ -10,6 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
+        body {
+            overflow-x: hidden;
+        }
+
         .mail {
             justify-content: space-around;
         }
@@ -48,9 +52,8 @@
             padding: 8px;
             margin-left: 10px;
             margin-top: 30px;
-            width: 100%;
-            padding-right: 160px;
-            margin-right: -160px;
+            max-width: 100%;
+            min-width: 100%;
             border-radius: 8px 8px 8px 8px;
         }
 
@@ -73,15 +76,19 @@
             float: right;
         }
 
+        .second {
+            margin-right: 20px;
+        }
+
+        .barre {
+            margin: -8px;
+            text-align: center;
+        }
+
     </style>
 </head>
 
 <body>
-
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>My First Bootstrap 4 Page</h1>
-        <p>Resize this responsive page to see the effect!</p>
-    </div>
 
     <?php
 require('includes/navbar.php');
@@ -110,7 +117,7 @@ require('includes/navbar.php');
         <div class="education">
             <div class="conteneur">
                 <a class="arrow" href="#edu1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                <a href="http://www.ipi-ecoles.com/" target="_blank"><img src="logos/ipi.jpg"  style="width:25px;"/></a><strong> - Institue Poly Informatique</strong> - en cours<i class="right">Depuis Sept. 2017</i>
+                <strong>Institue Poly Informatique</strong> <a href="http://www.ipi-ecoles.com/" target="_blank"><img src="logos/ipi.jpg" style="width:25px;" /></a> - en cours<i class="right">Depuis Sept. 2017</i>
                 <div id="edu1" class="collapse">
                     <p><u>Préparation de deux diplômes : </u></p>
                     <ul>
@@ -121,14 +128,14 @@ require('includes/navbar.php');
             </div>
             <div class="conteneur">
                 <a class="arrow" href="#edu2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg"  style="width:30px;"/></a><strong> - CQP en assurance</strong> <i class="right">2011-2012</i>
+                <strong>CQP en assurance</strong> <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg" style="width:30px;" /></a> <i class="right">2011-2012</i>
                 <div id="edu2" class="collapse">
                     <p>Obtention d'une qualification professionnelle en assurance. Après 3 mois de formation et 9 mois d'exercice du métier de téléconseiller au sein de la MAIF</p>
                 </div>
             </div>
             <div class="conteneur">
                 <a class="arrow" href="#edu3" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                <a href="http://www.ldmraspail.fr/" target="_blank"><img src="logos/raspail.jpg"  style="width:65px;"/></a><strong> - BTS Technico-commercial</strong> <i class="right">2009-2011</i>
+                <strong>BTS Technico-commercial</strong> <a href="http://www.ldmraspail.fr/" target="_blank"><img src="logos/raspail.jpg" style="width:65px;" /></a> <i class="right">2009-2011</i>
                 <div id="edu3" class="collapse">
                     <p>Spécialisé dans l'énergie et l'environnement. Au Lycée Raspail, Paris 14éme</p>
                 </div>
@@ -138,10 +145,48 @@ require('includes/navbar.php');
             <div class="titre" style="min-width: 250px">Past employement</div>
             <div class="extTitre"></div>
         </div>
+        <div class="conteneur">
+            <a class="arrow" href="#emp3" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+            <strong>Concepteur/développeur Java junior</strong> <a href="https://www.cgi.fr/" target="_blank"><img src="logos/cgi.png" style="width:25px;" /></a><i class="right">Depuis Sept. 2017</i>
+            <div id="emp3" class="collapse">
+                <p><u>Exercice du métier de développeur junior :</u></p>
+                <ul>
+
+                    <li>
+                        <div class="row">
+                            <div class="col-8"><strong>Ministère de la Justice</strong>
+                                <p>Projet de dématerialisation - Technologies et frameworks utilisés : </p>
+                                <ul><i>
+                                        <li>Java</li>
+                                        <li>Spring MVC</li>
+                                        <li>Flyway</li>
+                                        <li>MyBatis</li>
+                                        <li>Spock Testing</li>
+                                </ul></i>
+                            </div>
+                            <div class="col-3"><i class="right second">Depuis Mars 2018</i></div>
+                            <div class="col-1">
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                                <p class="barre">|</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
         <div class="pastEmploy">
             <div class="conteneur">
                 <a class="arrow" href="#emp2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                <a href="" target="_blank"><img src="logos/healthcity.jpg"  style="width:30px;"/></a> <strong>&</strong> <a href="" target="_blank"><img src="logos/cmg.jpg"  style="width:35px;"/></a><strong> - Consultant vente dans le sport</strong><i class="right">2012-2017</i>
+                <strong>Consultant vente dans le sport</strong> <a href="https://www.healthcity.fr/" target="_blank"><img src="logos/healthcity.jpg" style="width:30px;" /></a><strong>&</strong> <a href="https://www.cmgsportsclub.com/" target="_blank"><img src="logos/cmg.jpg" style="width:35px;" /></a><i class="right">2012-2017</i>
                 <div id="emp2" class="collapse">
                     <p><u>Exercice du métier de consultant vente :</u></p>
                     <ul>
@@ -155,7 +200,7 @@ require('includes/navbar.php');
             </div>
             <div class="conteneur">
                 <a class="arrow" href="#emp1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg"  style="width:30px;"/></a><strong> - Conseiller clientèle en assurance</strong><i class="right">2011-2012</i>
+                <strong>Conseiller clientèle en assurance</strong> <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg" style="width:30px;" /></a><i class="right">2011-2012</i>
                 <div id="emp1" class="collapse">
                     <p><u>Exercice du métier de téléconseiller :</u></p>
                     <ul>
