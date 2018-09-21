@@ -28,6 +28,7 @@
 
         .separateur {
             flex-wrap: nowrap;
+            margin-top: -20px;
         }
 
         .titre {
@@ -48,8 +49,8 @@
             margin-left: 10px;
             margin-top: 30px;
             width: 100%;
-            padding-right: 80px;
-            margin-right: -80px;
+            padding-right: 160px;
+            margin-right: -160px;
             border-radius: 8px 8px 8px 8px;
         }
 
@@ -67,6 +68,11 @@
         .conteneur {
             margin-top: 10px;
         }
+
+        .right {
+            float: right;
+        }
+
     </style>
 </head>
 
@@ -81,7 +87,7 @@
 require('includes/navbar.php');
 ?>
 
-    <div class="container justify-content" style="margin-top:10px">
+    <div class="container justify-content" style="margin-top:30px">
         <div class="contact row">
             <div class="test row col-10">
                 <div class="col-2">contact</div>
@@ -104,40 +110,58 @@ require('includes/navbar.php');
         <div class="education">
             <div class="conteneur">
                 <a class="arrow" href="#edu1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                <strong>CGI</strong> - alternance <i class="right">2018-2021</i>
+                <a href="http://www.ipi-ecoles.com/" target="_blank"><img src="logos/ipi.jpg"  style="width:25px;"/></a><strong> - Institue Poly Informatique</strong> - en cours<i class="right">Depuis Sept. 2017</i>
                 <div id="edu1" class="collapse">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p><u>Préparation de deux diplômes : </u></p>
+                    <ul>
+                        <li><i>Titre RNCP de niveau II :</i> Concepteur - Développeur en application</li>
+                        <li><i>Titre RNCP de niveau III :</i> Technicien informatique et réseaux</li>
+                    </ul>
                 </div>
             </div>
             <div class="conteneur">
                 <a class="arrow" href="#edu2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                CGI - alternance <i class="right">2018-2021</i>
+                <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg"  style="width:30px;"/></a><strong> - CQP en assurance</strong> <i class="right">2011-2012</i>
                 <div id="edu2" class="collapse">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p>Obtention d'une qualification professionnelle en assurance. Après 3 mois de formation et 9 mois d'exercice du métier de téléconseiller au sein de la MAIF</p>
+                </div>
+            </div>
+            <div class="conteneur">
+                <a class="arrow" href="#edu3" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <a href="http://www.ldmraspail.fr/" target="_blank"><img src="logos/raspail.jpg"  style="width:65px;"/></a><strong> - BTS Technico-commercial</strong> <i class="right">2009-2011</i>
+                <div id="edu3" class="collapse">
+                    <p>Spécialisé dans l'énergie et l'environnement. Au Lycée Raspail, Paris 14éme</p>
                 </div>
             </div>
         </div>
         <div class="row separateur">
-            <div class="titre" style="min-width: 232px">Past employement</div>
+            <div class="titre" style="min-width: 250px">Past employement</div>
             <div class="extTitre"></div>
         </div>
         <div class="pastEmploy">
             <div class="conteneur">
-                <p class="inline-block">
-                    <a class="arrow" href="#emp1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
-                    <strong>CGI</strong> 
-                </p>
-                <p class="date">
-                    <i>2018-2021</i>
-                </p>
+                <a class="arrow" href="#emp2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <a href="" target="_blank"><img src="logos/healthcity.jpg"  style="width:30px;"/></a> <strong>&</strong> <a href="" target="_blank"><img src="logos/cmg.jpg"  style="width:35px;"/></a><strong> - Consultant vente dans le sport</strong><i class="right">2012-2017</i>
+                <div id="emp2" class="collapse">
+                    <p><u>Exercice du métier de consultant vente :</u></p>
+                    <ul>
+                        <li>Gestion et souscription de différents contrats d'abonnement en fonction des besoins</li>
+                        <li>Suivi clientèle, propositions de services complémentaires</li>
+                        <li>Démarches commerciales dans la zone de chalandise</li>
+                        <li>Formation de petites équipes commerciales</li>
+                        <li>Gestion et clôture administrative de la caisse</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conteneur">
+                <a class="arrow" href="#emp1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg"  style="width:30px;"/></a><strong> - Conseiller clientèle en assurance</strong><i class="right">2011-2012</i>
                 <div id="emp1" class="collapse">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p><u>Exercice du métier de téléconseiller :</u></p>
+                    <ul>
+                        <li>Gestion et souscription de 12 différents produits d'assurance (VAM, RAQVAM, individuel corporelle...)</li>
+                        <li>Sollicitation/rebond commercial, objectif sur vente</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -149,7 +173,6 @@ require('includes/navbar.php');
         $(document).ready(function() {
             $(".arrow").click(function() {
                 var img = $(this).find('img.imgButton')[0]; // the actual DOM element for the image
-                console.log('img:' + img);
                 if (img.src.indexOf('flecheDroite.png') != -1) {
                     img.src = 'icones/flecheBas.png';
                 } else {

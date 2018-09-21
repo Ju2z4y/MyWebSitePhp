@@ -17,13 +17,5 @@
                     <a class="nav-link" href="#">Mes réalisation</a>
                 </li>
             </ul>
-            <ul class=" navbar-nav ml-auto">
-                <li>
-                    <form class="form-inline" action="/action_page.php">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
-                </li>
-            </ul>
         </div>
     </nav>
