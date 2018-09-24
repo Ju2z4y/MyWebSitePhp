@@ -1,6 +1,6 @@
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>MyBook Julien Griffault</h1>
+  <p>Bienvenue sur mon site de présentation ..</p> 
 </div>   
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a class="navbar-brand" href="index.php">

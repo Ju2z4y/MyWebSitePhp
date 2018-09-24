@@ -85,6 +85,15 @@
             text-align: center;
         }
 
+        .titreSkill {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .skillContainer {
+            margin-left: -14px;
+        }
+
     </style>
 </head>
 
@@ -101,6 +110,9 @@ require('includes/navbar.php');
                 <div class="col-8"><strong>E-mail : </strong>julien.griffault90@gmail.com <strong>Tel : </strong>06 29 07 96 18</div>
             </div>
             <div class="photo col-2"><img src="images/photoID.png" alt="Logo" style="width:100px;"></div>
+        </div>
+        <div>
+            <button type="button" id="toutDerouler"></button>
         </div>
         <div class="row separateur">
             <div class="titre" style="min-width: 248px">Personnal Statement</div>
@@ -142,7 +154,7 @@ require('includes/navbar.php');
             </div>
         </div>
         <div class="row separateur">
-            <div class="titre" style="min-width: 250px">Past employement</div>
+            <div class="titre" style="min-width: 240px">Past employement</div>
             <div class="extTitre"></div>
         </div>
         <div class="conteneur">
@@ -210,19 +222,89 @@ require('includes/navbar.php');
                 </div>
             </div>
         </div>
+        <div class="row separateur">
+            <div class="titre" style="min-width: 240px">Skills</div>
+            <div class="extTitre"></div>
+        </div>
+        <div class="container skillContainer" style="margin-bottom:30px">
+            <div class="container">
+                <h3>Developpement</h3>
+                <div class="row">
+                    <a class="arrow" href="#skill1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                    <p class="titreSkill"><strong>JavaEE</strong></p>
+                    <div class="progress" style="width:450px;height:25px">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
+                    </div>
+                </div>
+                <div id="skill1" class="collapse">
+                    <ul>
+                        <p><strong>FrameWorks :</strong></p>
+                        <li>MyBatis
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:30%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>Flyway
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:10%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>SpockTesting
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:85%;height:10px"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <a class="arrow" href="#skill2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                    <p class="titreSkill"><strong>HTML / CSS / JS</strong></p>
+                    <div class="progress" style="width:450px;height:25px">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
+                    </div>
+                </div>
+                <div id="skill2" class="collapse">
+                    <ul>
+                        <p><strong>FrameWorks :</strong></p>
+                        <li>JQuery
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:70%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>Bootstrap 3 & 4
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:60%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>Vue.js (futur)
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:1%;height:10px"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="jumbotron text-center" style="margin-bottom:0">
         <p>Footer</p>
     </div>
     <script>
         $(document).ready(function() {
             $(".arrow").click(function() {
+                $('.collapse').collapse()
                 var img = $(this).find('img.imgButton')[0]; // the actual DOM element for the image
                 if (img.src.indexOf('flecheDroite.png') != -1) {
                     img.src = 'icones/flecheBas.png';
                 } else {
                     img.src = 'icones/flecheDroite.png';
                 }
+            });
+
+            $("#toutDerouler").click(function() {
+                console.log("Hiiiiii");
+                $('.collapse').collapse();
             });
         });
 
