@@ -95,8 +95,7 @@
         }
         
         .center {
-            align-items: center;
-            text-align: center;
+            justify-content: space-around;
         }
         
         .bigBarre {
@@ -120,7 +119,9 @@ require('includes/navbar.php');
             </div>
             <div class="photo col-2"><img src="images/photoID.png" alt="Logo" style="width:100px;"></div>
         </div>
-        <div class="center">
+        <div class="center row">
+            <button type="button" class="btn btn-dark" id="toutInverser">Tout inverser</button>
+            <button type="button" class="btn btn-dark" id="toutRanger">Tout ranger</button>
             <button type="button" class="btn btn-dark" id="toutDerouler">Tout dérouler</button>
         </div>
         <div class="row separateur">
@@ -243,26 +244,31 @@ require('includes/navbar.php');
                     <p class="titreSkill"><strong>JavaEE</strong></p>
                 </div>
                 <div class="progress bigBarre" style="width:450px;height:25px">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:70%;height:25px"></div>
                 </div>
                 <div id="skill1" class="collapse">
                     <ul>
                         <p><strong>FrameWorks :</strong></p>
                         <li>MyBatis
                             <div class="progress" style="width:250px;height:10px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:30%;height:10px"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:30%;height:10px"></div>
                             </div>
                         </li>
                         <li>Flyway
                             <div class="progress" style="width:250px;height:10px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:10%;height:10px"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:10%;height:10px"></div>
                             </div>
                         </li>
                         <li>SpockTesting
                             <div class="progress" style="width:250px;height:10px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:85%;height:10px"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:85%;height:10px"></div>
                             </div>
                         </li>
+                        <li>SpringMVC
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:85%;height:10px"></div>
+                            </div>
+                        </li>                        
                     </ul>
                 </div>
                 <div class="row">
@@ -270,24 +276,24 @@ require('includes/navbar.php');
                     <p class="titreSkill"><strong>HTML / CSS / JS</strong></p>
                 </div>
                 <div class="progress bigBarre" style="width:450px;height:25px">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:70%;height:25px"></div>
                 </div>
                 <div id="skill2" class="collapse">
                     <ul>
                         <p><strong>FrameWorks :</strong></p>
                         <li>JQuery
                             <div class="progress" style="width:250px;height:10px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:70%;height:10px"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:70%;height:10px"></div>
                             </div>
                         </li>
                         <li>Bootstrap 3 & 4
                             <div class="progress" style="width:250px;height:10px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:60%;height:10px"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:60%;height:10px"></div>
                             </div>
                         </li>
                         <li>Vue.js (futur)
                             <div class="progress" style="width:250px;height:10px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:1%;height:10px"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:8%;height:10px"></div>
                             </div>
                         </li>
                     </ul>
@@ -310,18 +316,36 @@ require('includes/navbar.php');
                 }
             });
 
+            $("#toutInverser").click(function() {
+                // the actual DOM element for the image
+                for (i = 0; i < $(document).find('img.imgButton').length; i++) {
+                    var img = $(document).find('img.imgButton')[i];
+                if (img.src.indexOf('flecheDroite.png') != -1) {
+                    img.src = 'icones/flecheBas.png';
+                } else {
+                    img.src = 'icones/flecheDroite.png';
+                }
+                }
+                $('.collapse').collapse("toggle");
+            });
+            
             $("#toutDerouler").click(function() {
                 // the actual DOM element for the image
                 for (i = 0; i < $(document).find('img.imgButton').length; i++) {
                     var img = $(document).find('img.imgButton')[i];
-                    if (img.src.indexOf('flecheDroite.png') != -1) {
                         img.src = 'icones/flecheBas.png';
-                    } else {
-                        img.src = 'icones/flecheDroite.png';
-                    }
                 }
-                $('.collapse').collapse("toggle");
-            });
+                $('.collapse').collapse("show");
+            });          
+            
+            $("#toutRanger").click(function() {
+                // the actual DOM element for the image
+                for (i = 0; i < $(document).find('img.imgButton').length; i++) {
+                    var img = $(document).find('img.imgButton')[i];
+                        img.src = 'icones/flecheDroite.png';
+                }
+                $('.collapse').collapse("hide");
+            });                 
         });
 
     </script>
