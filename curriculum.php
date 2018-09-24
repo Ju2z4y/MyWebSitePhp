@@ -101,6 +101,10 @@
         .bigBarre {
             margin-bottom: 20px;
         }
+        
+        .togglingbuttons {
+            margin-top: 20px;
+        }
 
     </style>
 </head>
@@ -119,7 +123,7 @@ require('includes/navbar.php');
             </div>
             <div class="photo col-2"><img src="images/photoID.png" alt="Logo" style="width:100px;"></div>
         </div>
-        <div class="center row">
+        <div class="center row togglingbuttons">
             <button type="button" class="btn btn-dark" id="toutInverser">Tout inverser</button>
             <button type="button" class="btn btn-dark" id="toutRanger">Tout ranger</button>
             <button type="button" class="btn btn-dark" id="toutDerouler">Tout dérouler</button>
@@ -266,7 +270,7 @@ require('includes/navbar.php');
                         </li>
                         <li>SpringMVC
                             <div class="progress" style="width:250px;height:10px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:85%;height:10px"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:65%;height:10px"></div>
                             </div>
                         </li>                        
                     </ul>
@@ -276,7 +280,7 @@ require('includes/navbar.php');
                     <p class="titreSkill"><strong>HTML / CSS / JS</strong></p>
                 </div>
                 <div class="progress bigBarre" style="width:450px;height:25px">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:70%;height:25px"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:85%;height:25px"></div>
                 </div>
                 <div id="skill2" class="collapse">
                     <ul>
