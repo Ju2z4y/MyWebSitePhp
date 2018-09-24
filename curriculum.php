@@ -93,6 +93,15 @@
         .skillContainer {
             margin-left: -14px;
         }
+        
+        .center {
+            align-items: center;
+            text-align: center;
+        }
+        
+        .bigBarre {
+            margin-bottom: 20px;
+        }
 
     </style>
 </head>
@@ -111,8 +120,8 @@ require('includes/navbar.php');
             </div>
             <div class="photo col-2"><img src="images/photoID.png" alt="Logo" style="width:100px;"></div>
         </div>
-        <div>
-            <button type="button" id="toutDerouler"></button>
+        <div class="center">
+            <button type="button" class="btn btn-dark" id="toutDerouler">Tout dérouler</button>
         </div>
         <div class="row separateur">
             <div class="titre" style="min-width: 248px">Personnal Statement</div>
@@ -232,9 +241,9 @@ require('includes/navbar.php');
                 <div class="row">
                     <a class="arrow" href="#skill1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
                     <p class="titreSkill"><strong>JavaEE</strong></p>
-                    <div class="progress" style="width:450px;height:25px">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
-                    </div>
+                </div>
+                <div class="progress bigBarre" style="width:450px;height:25px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
                 </div>
                 <div id="skill1" class="collapse">
                     <ul>
@@ -259,9 +268,9 @@ require('includes/navbar.php');
                 <div class="row">
                     <a class="arrow" href="#skill2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
                     <p class="titreSkill"><strong>HTML / CSS / JS</strong></p>
-                    <div class="progress" style="width:450px;height:25px">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
-                    </div>
+                </div>
+                <div class="progress bigBarre" style="width:450px;height:25px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:25px"></div>
                 </div>
                 <div id="skill2" class="collapse">
                     <ul>
@@ -293,7 +302,6 @@ require('includes/navbar.php');
     <script>
         $(document).ready(function() {
             $(".arrow").click(function() {
-                $('.collapse').collapse()
                 var img = $(this).find('img.imgButton')[0]; // the actual DOM element for the image
                 if (img.src.indexOf('flecheDroite.png') != -1) {
                     img.src = 'icones/flecheBas.png';
@@ -303,8 +311,16 @@ require('includes/navbar.php');
             });
 
             $("#toutDerouler").click(function() {
-                console.log("Hiiiiii");
-                $('.collapse').collapse();
+                // the actual DOM element for the image
+                for (i = 0; i < $(document).find('img.imgButton').length; i++) {
+                    var img = $(document).find('img.imgButton')[i];
+                    if (img.src.indexOf('flecheDroite.png') != -1) {
+                        img.src = 'icones/flecheBas.png';
+                    } else {
+                        img.src = 'icones/flecheDroite.png';
+                    }
+                }
+                $('.collapse').collapse("toggle");
             });
         });
 
