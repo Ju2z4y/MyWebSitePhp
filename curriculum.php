@@ -124,9 +124,8 @@ require('includes/navbar.php');
             <div class="photo col-2"><img src="images/photoID.png" alt="Logo" style="width:100px;"></div>
         </div>
         <div class="center row togglingbuttons">
-            <button type="button" class="btn btn-dark" id="toutInverser">Tout inverser</button>
-            <button type="button" class="btn btn-dark" id="toutRanger">Tout ranger</button>
             <button type="button" class="btn btn-dark" id="toutDerouler">Tout dérouler</button>
+            <button type="button" class="btn btn-dark" id="toutRanger">Tout ranger</button>
         </div>
         <div class="row separateur">
             <div class="titre" style="min-width: 248px">Personnal Statement</div>
@@ -305,10 +304,14 @@ require('includes/navbar.php');
             </div>
         </div>
     </div>
+    <div class="row" style="justify-content: center;margin-bottom:20px;">
 
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <p>Footer</p>
+        <button type="button" class="btn btn-dark" id="dlCV">Télécharger le CV</button>
     </div>
+
+<?php
+require('includes/footer.php');
+    ?>
     <script>
         $(document).ready(function() {
             $(".arrow").click(function() {

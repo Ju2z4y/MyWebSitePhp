@@ -14,11 +14,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="curriculum.php">Curriculum Vitae</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mes services</a>
+                <li class="nav-item ">
+                    <a class="nav-link disabled" href="#">Mes services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Mes réalisation</a>
+                    <a class="nav-link disabled" href="#">Mes réalisation</a>
                 </li>
             </ul>
         </div>
