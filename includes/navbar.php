@@ -1,8 +1,9 @@
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>MyBook Julien Griffault</h1>
-  <p>Bienvenue sur mon site de présentation ..</p> 
-</div>   
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<div class="headerDiv">
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>MyBook Julien Griffault</h1>
+        <p>Bienvenue sur mon site de présentation ..</p>
+    </div>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a class="navbar-brand" href="index.php">
             <img src="images/photoID.png" alt="Logo" style="width:40px;">
         </a>
@@ -15,7 +16,7 @@
                     <a class="nav-link" href="curriculum.php">Curriculum Vitae</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link disabled" href="#">Mes services</a>
+                    <a class="nav-link disabled" href="services.php">Mes services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Mes réalisation</a>
@@ -23,3 +24,4 @@
             </ul>
         </div>
     </nav>
+</div>

@@ -306,7 +306,7 @@ require('includes/navbar.php');
     </div>
     <div class="row" style="justify-content: center;margin-bottom:20px;">
 
-        <button type="button" class="btn btn-dark" id="dlCV">Télécharger le CV</button>
+        <a href="CV_Dev_Julien_GRIFFAULT.pdf" target="_blank"><button type="button" class="btn btn-dark" id="dlCV">Télécharger le CV</button></a>
     </div>
 
 <?php
