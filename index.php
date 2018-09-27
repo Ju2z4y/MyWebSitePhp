@@ -55,7 +55,8 @@ require('includes/navbar.php');
                 <h5>Information, Sept 21, 2018</h5>
                 <div><img src="images/site-web-en-construction.jpg" style="width:380px;" /></div>
                 <p>Rédaction de la version du site 2.0</p>
-                <p>Site en construction depuis le 21 septembre, tout sera rédigé par mes soins à l'aide de différents outils comme HTML 5, CSS3, JQuery et Bootstrap 4. Il sera en constante évolution.</p>
+                <p>Site en construction depuis le 21 septembre, tout sera rédigé par mes soins à l'aide de différents outils comme HTML 5, CSS3, JQuery et Bootstrap 4. Il sera en constante évolution car codé sur mon temps libre.</p>
+                <p>Sont but est de présenter mes compétences, et de proposer mes services.</p>
                 <br>
                 <h2>Nouvel onglet !</h2>
                 <h5>Curriculum Vitae</h5>
