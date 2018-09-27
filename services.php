@@ -65,6 +65,12 @@
             padding: 5px;
         }
         
+        .hardware {
+            width: 50%;
+            text-align: left;
+            
+        }
+        
 
     </style>
 </head>
@@ -105,7 +111,20 @@ require('includes/navbar.php');
         </div>
         <div id="demo" class="center collapse">
             <h3>Réparation Software & Hardware</h3>
-            <p>Services proposés : </p>
+            <div class="container hardware">
+                <p>Services proposés :</p>
+                <ul>
+                    <li>Réparations matériels : 
+                        <ul>
+                            <li>Ordinateurs de bureau</li>
+                            <li>Ordinateurs portables</li>
+                            <li>Téléphones portables</li>
+                            <li>Tablettes</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo">Retour</button>
         </div>
         <div id="demo1" class="center collapse">
@@ -130,9 +149,11 @@ require('includes/footer.php');
             $(".service").click(function() {
                 $(".service").delay(280).slideUp("fast");
                 $(".btn-secondary").delay(500).fadeIn();
+                $(".serviceIntro").delay(280).slideUp("fast");
             });
             $(".btn-secondary").click(function() {
                 $(".service").delay(280).slideDown("fast");
+                $(".serviceIntro").delay(280).slideDown("fast");
                 $(".btn-secondary").hide();
             });
         });

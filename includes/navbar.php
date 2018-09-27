@@ -16,7 +16,7 @@
                     <a class="nav-link" href="curriculum.php">Curriculum Vitae</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link disabled" href="services.php">Mes services</a>
+                    <a class="nav-link" href="services.php">Mes services - <i>test</i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Mes réalisation</a>
