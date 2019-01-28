@@ -10,106 +10,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
-        body {
-            overflow-x: hidden;
-        }
 
-        .mail {
-            justify-content: space-around;
-        }
-
-        .test {
-            margin-top: 40px;
-            height: 60px;
-            line-height: 60px;
-            border-bottom: solid black 1px;
-            margin-right: 20;
-        }
-
-        .photo {
-            text-align: right;
+        .cvContainer {
+            text-align: center;
+            width: 900px;
         }
 
         .separateur {
+            margin-left: -50px;
+            width: 1000px;
+            height: 35px;
             flex-wrap: nowrap;
-            margin-top: -20px;
+            vertical-align: middle;
         }
-
-        .titre {
+        
+        .titre{
             background-color: black;
             color: white;
             border-radius: 0px 8px 8px 0px;
-            padding: 8px;
-            padding-left: 80px;
-            padding-right: 20px;
-            margin-left: -80px;
-            margin-top: 30px;
+            padding-top: 4px;
         }
-
-        .extTitre {
+        
+        .endTitre {
             background-color: gainsboro;
-            padding: 8px;
+            width: 100%;
             margin-left: 10px;
-            margin-top: 30px;
-            max-width: 100%;
-            min-width: 100%;
+            border-radius: 8px 0px 0px 8px;
+        }
+        
+        .conteneur {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .photo {
             border-radius: 8px 8px 8px 8px;
         }
-
-        h6 {
-            text-align: center;
-            margin-top: 25px;
+        
+        .contact {
+            vertical-align: middle;
+            padding-top: 35px;
         }
-
-        .imgButton {
-            width: 30px;
-            height: 30px;
-            border: none;
+        
+        .contactBox {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
-
+        
         .conteneur {
-            margin-top: 10px;
+            text-align: left;
         }
-
+        
         .right {
             float: right;
         }
-
-        .second {
-            margin-right: 20px;
-        }
-
-        .barre {
-            margin: -8px;
-            text-align: center;
-        }
-
+        
         .titreSkill {
             padding-left: 10px;
             padding-right: 10px;
         }
-
-        .skillContainer {
-            margin-left: -14px;
-        }
-        
-        .center {
-            justify-content: space-around;
-        }
-        
+                
         .bigBarre {
             margin-bottom: 20px;
         }
         
-        .togglingbuttons {
-            margin-top: 20px;
+        h3 {
+            text-align: left;
         }
         
-        .cvContainer {
-            margin-top: 30px;
-            max-width: 500px;
+        ul {
+            text-align: left;
         }
-
+                
+        .center {
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        
     </style>
 </head>
 
@@ -120,29 +97,40 @@ require('includes/navbar.php');
 ?>
 
     <div class="container justify-content cvContainer">
-        <div class="contact row">
-            <div class="test row col-10">
-                <div class="col-2">contact</div>
-                <div class="col-8"><strong>E-mail : </strong>julien.griffault90@gmail.com <strong>Tel : </strong>06 29 07 96 18</div>
+
+        <div class=" contactBox row">
+            <div class="contact col-10">
+                <strong>E-mail : </strong>julien.griffault90@gmail.com <strong>Tel : </strong>06 29 07 96 18
             </div>
-            <div class="photo col-2"><img src="images/photoID.png" alt="Logo" style="width:100px;"></div>
+            <div class="col-2"><img class="photo" src="images/photoID.png" alt="Logo" style="width:100px;"></div>
         </div>
+        
         <div class="center row togglingbuttons">
             <button type="button" class="btn btn-dark" id="toutDerouler">Tout dérouler</button>
             <button type="button" class="btn btn-dark" id="toutRanger">Tout ranger</button>
         </div>
-        <div class="row separateur">
-            <div class="titre" style="min-width: 248px">Personnal Statement</div>
-            <div class="extTitre"></div>
+        
+        <div class="separateur row">
+            <div class="titre" style="width:280px">
+                <p>Personnal Statement</p>
+            </div>
+            <div class="endTitre">
+            </div>
         </div>
-        <div class="personalStatement">
+        
+        <div class="conteneur">
             <h6>Le latin est une langue italique de la famille des langues indo-européennes, parlée à l'origine dans le Latium et la Rome antique. Bien qu'il soit souvent considéré comme une langue morte, sa connaissance, voire son usage, se sont maintenus à l'université et dans le clergé.</h6>
             <p>Durant l'Antiquité, le latin a été parlé dans tout le bassin méditerranéen, essentiellement dans les pays conquis par les Romains. Dans ces pays, il a parfois remplacé complètement les langues qui existaient avant comme en Gaule ou en Hispanie, ou bien ces langues ont subsisté comme en Grèce et en Bretagne.</p>
         </div>
-        <div class="row separateur">
-            <div class="titre">Education</div>
-            <div class="extTitre"></div>
+        
+        <div class="separateur row">
+            <div class="titre" style="width:150px">
+                <p>Education</p>
+            </div>
+            <div class="endTitre">
+            </div>
         </div>
+        
         <div class="education">
             <div class="conteneur">
                 <a class="arrow" href="#edu1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
@@ -170,10 +158,15 @@ require('includes/navbar.php');
                 </div>
             </div>
         </div>
-        <div class="row separateur">
-            <div class="titre" style="min-width: 240px">Past employement</div>
-            <div class="extTitre"></div>
+        
+        <div class="separateur row">
+            <div class="titre" style="width:250px">
+                <p>Past Employement</p>
+            </div>
+            <div class="endTitre">
+            </div>
         </div>
+        
         <div class="conteneur">
             <a class="arrow" href="#emp3" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
             <strong>Concepteur/développeur Java junior</strong> <a href="https://www.cgi.fr/" target="_blank"><img src="logos/cgi.png" style="width:25px;" /></a><i class="right">Depuis Sept. 2017</i>
@@ -193,18 +186,8 @@ require('includes/navbar.php');
                                         <li>Spock Testing</li>
                                 </ul></i>
                             </div>
-                            <div class="col-3"><i class="right second">Depuis Mars 2018</i></div>
-                            <div class="col-1">
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
-                                <p class="barre">|</p>
+                                <div class="col-3"><i class="right second">Depuis Mars 2018</i></div>
+                                <div class="col-1">
                             </div>
                         </div>
                     </li>
@@ -212,6 +195,7 @@ require('includes/navbar.php');
                 </ul>
             </div>
         </div>
+        
         <div class="pastEmploy">
             <div class="conteneur">
                 <a class="arrow" href="#emp2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
@@ -239,10 +223,15 @@ require('includes/navbar.php');
                 </div>
             </div>
         </div>
-        <div class="row separateur">
-            <div class="titre" style="min-width: 240px">Skills</div>
-            <div class="extTitre"></div>
+        
+        <div class="separateur row">
+            <div class="titre" style="width:110px">
+                <p>Skills</p>
+            </div>
+            <div class="endTitre">
+            </div>
         </div>
+        
         <div class="container skillContainer" style="margin-bottom:30px">
             <div class="container">
                 <h3>Developpement</h3>
@@ -307,15 +296,13 @@ require('includes/navbar.php');
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row" style="justify-content: center;margin-bottom:20px;">
 
-        <button type="button" class="btn btn-dark" id="dlCV">Télécharger le CV</button>
     </div>
 
 <?php
 require('includes/footer.php');
     ?>
+
     <script>
         $(document).ready(function() {
             $(".arrow").click(function() {
