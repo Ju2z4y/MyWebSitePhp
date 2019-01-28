@@ -57,6 +57,31 @@
             margin-bottom: 20px;
         }
         
+        .conteneur {
+            text-align: left;
+        }
+        
+        .right {
+            float: right;
+        }
+        
+        .titreSkill {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+                
+        .bigBarre {
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            text-align: left;
+        }
+        
+        ul {
+            text-align: left;
+        }
+        
     </style>
 </head>
 
@@ -76,7 +101,7 @@ require('includes/navbar.php');
         </div>
         
         <div class="separateur row">
-            <div class="titre" style="width:350px">
+            <div class="titre" style="width:280px">
                 <p>Personnal Statement</p>
             </div>
             <div class="endTitre">
@@ -89,32 +114,185 @@ require('includes/navbar.php');
         </div>
         
         <div class="separateur row">
-            <div class="titre" style="width:350px">
+            <div class="titre" style="width:150px">
                 <p>Education</p>
             </div>
             <div class="endTitre">
             </div>
         </div>
         
+        <div class="education">
+            <div class="conteneur">
+                <a class="arrow" href="#edu1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <strong>Institue Poly Informatique</strong> <a href="http://www.ipi-ecoles.com/" target="_blank"><img src="logos/ipi.jpg" style="width:25px;" /></a> - en cours<i class="right">Depuis Sept. 2017</i>
+                <div id="edu1" class="collapse">
+                    <p><u>Préparation de deux diplômes : </u></p>
+                    <ul>
+                        <li><i>Titre RNCP de niveau II :</i> Concepteur - Développeur en application</li>
+                        <li><i>Titre RNCP de niveau III :</i> Technicien informatique et réseaux</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conteneur">
+                <a class="arrow" href="#edu2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <strong>CQP en assurance</strong> <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg" style="width:30px;" /></a> <i class="right">2011-2012</i>
+                <div id="edu2" class="collapse">
+                    <p>Obtention d'une qualification professionnelle en assurance. Après 3 mois de formation et 9 mois d'exercice du métier de téléconseiller au sein de la MAIF</p>
+                </div>
+            </div>
+            <div class="conteneur">
+                <a class="arrow" href="#edu3" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <strong>BTS Technico-commercial</strong> <a href="http://www.ldmraspail.fr/" target="_blank"><img src="logos/raspail.jpg" style="width:65px;" /></a> <i class="right">2009-2011</i>
+                <div id="edu3" class="collapse">
+                    <p>Spécialisé dans l'énergie et l'environnement. Au Lycée Raspail, Paris 14éme</p>
+                </div>
+            </div>
+        </div>
+        
         <div class="separateur row">
-            <div class="titre" style="width:350px">
+            <div class="titre" style="width:250px">
                 <p>Past Employement</p>
             </div>
             <div class="endTitre">
             </div>
         </div>
         
+        <div class="conteneur">
+            <a class="arrow" href="#emp3" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+            <strong>Concepteur/développeur Java junior</strong> <a href="https://www.cgi.fr/" target="_blank"><img src="logos/cgi.png" style="width:25px;" /></a><i class="right">Depuis Sept. 2017</i>
+            <div id="emp3" class="collapse">
+                <p><u>Exercice du métier de développeur junior :</u></p>
+                <ul>
+
+                    <li>
+                        <div class="row">
+                            <div class="col-8"><strong>Ministère de la Justice</strong>
+                                <p>Projet de dématerialisation - Technologies et frameworks utilisés : </p>
+                                <ul><i>
+                                        <li>Java</li>
+                                        <li>Spring MVC</li>
+                                        <li>Flyway</li>
+                                        <li>MyBatis</li>
+                                        <li>Spock Testing</li>
+                                </ul></i>
+                            </div>
+                            <div class="col-3"><i class="right second">Depuis Mars 2018</i></div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        
+        <div class="pastEmploy">
+            <div class="conteneur">
+                <a class="arrow" href="#emp2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <strong>Consultant vente dans le sport</strong> <a href="https://www.healthcity.fr/" target="_blank"><img src="logos/healthcity.jpg" style="width:30px;" /></a><strong>&</strong> <a href="https://www.cmgsportsclub.com/" target="_blank"><img src="logos/cmg.jpg" style="width:35px;" /></a><i class="right">2012-2017</i>
+                <div id="emp2" class="collapse">
+                    <p><u>Exercice du métier de consultant vente :</u></p>
+                    <ul>
+                        <li>Gestion et souscription de différents contrats d'abonnement en fonction des besoins</li>
+                        <li>Suivi clientèle, propositions de services complémentaires</li>
+                        <li>Démarches commerciales dans la zone de chalandise</li>
+                        <li>Formation de petites équipes commerciales</li>
+                        <li>Gestion et clôture administrative de la caisse</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conteneur">
+                <a class="arrow" href="#emp1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                <strong>Conseiller clientèle en assurance</strong> <a href="https://www.maif.fr/" target="_blank"><img src="logos/maif.jpg" style="width:30px;" /></a><i class="right">2011-2012</i>
+                <div id="emp1" class="collapse">
+                    <p><u>Exercice du métier de téléconseiller :</u></p>
+                    <ul>
+                        <li>Gestion et souscription de 12 différents produits d'assurance (VAM, RAQVAM, individuel corporelle...)</li>
+                        <li>Sollicitation/rebond commercial, objectif sur vente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
         <div class="separateur row">
-            <div class="titre" style="width:350px">
+            <div class="titre" style="width:110px">
                 <p>Skills</p>
             </div>
             <div class="endTitre">
             </div>
         </div>
         
+        <div class="container skillContainer" style="margin-bottom:30px">
+            <div class="container">
+                <h3>Developpement</h3>
+                <div class="row">
+                    <a class="arrow" href="#skill1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                    <p class="titreSkill"><strong>JavaEE</strong></p>
+                </div>
+                <div class="progress bigBarre" style="width:450px;height:25px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:70%;height:25px"></div>
+                </div>
+                <div id="skill1" class="collapse">
+                    <ul>
+                        <p><strong>FrameWorks :</strong></p>
+                        <li>MyBatis
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:30%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>Flyway
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:10%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>SpockTesting
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:85%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>SpringMVC
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:65%;height:10px"></div>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="row">
+                    <a class="arrow" href="#skill2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
+                    <p class="titreSkill"><strong>HTML / CSS / JS</strong></p>
+                </div>
+                <div class="progress bigBarre" style="width:450px;height:25px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:85%;height:25px"></div>
+                </div>
+                <div id="skill2" class="collapse">
+                    <ul>
+                        <p><strong>FrameWorks :</strong></p>
+                        <li>JQuery
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:70%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>Bootstrap 3 & 4
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:60%;height:10px"></div>
+                            </div>
+                        </li>
+                        <li>Vue.js (futur)
+                            <div class="progress" style="width:250px;height:10px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:8%;height:10px"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+<?php
+require('includes/footer.php');
+    ?>
 
     <script>
         $(document).ready(function() {
