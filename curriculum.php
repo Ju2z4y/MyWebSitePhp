@@ -44,7 +44,6 @@
             padding-right: 20px;
             margin-left: -80px;
             margin-top: 30px;
-            ;
         }
 
         .extTitre {
@@ -105,6 +104,11 @@
         .togglingbuttons {
             margin-top: 20px;
         }
+        
+        .cvContainer {
+            margin-top: 30px;
+            max-width: 500px;
+        }
 
     </style>
 </head>
@@ -115,7 +119,7 @@
 require('includes/navbar.php');
 ?>
 
-    <div class="container justify-content" style="margin-top:30px">
+    <div class="container justify-content cvContainer">
         <div class="contact row">
             <div class="test row col-10">
                 <div class="col-2">contact</div>
