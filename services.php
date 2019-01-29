@@ -32,12 +32,46 @@
             flex-wrap: wrap;
         }
         
-        .hardWareService {
+        .hardWareTitre {
             border: solid black 1px;
+            height: 200px;
+        }
+        
+        .hardWareService {
             width: 20%;
-            height: 100%;
             text-align: center;
             min-width: 330px;
+            padding: 5px;
+        }
+        
+        .hardWareService h3 {
+            font-weight: bold;
+        }
+        
+        .reparation {
+            background-image: url(images/reparation.jpg);
+            background-size: cover;
+        }
+        
+        .optimisation {
+            background-image: url(images/opti.jpg);
+            background-size: cover;  
+            color: aliceblue;
+        }
+        
+        .creation {
+            background-image: url(images/creation.jpg);
+            background-size: cover;  
+            color: aliceblue;            
+        }
+        
+        .serviceContent {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: solid black 1px;
+            border-top: none;
+            font-style: italic;
         }
         
     </style>
@@ -66,17 +100,31 @@ require('includes/navbar.php');
     </div>
     <div class="hardWareBox">
         <div class="hardWareService">
-            <h3>Réparation</h3>
-            <p>Ne jetez pas votre pc car il est en panne, faites le réparer. Parfois il est possible de le faire à moindre coûts pour prolonger la durée de vie de votre machine.</p>
+            <div class="hardWareTitre reparation" data-toggle="collapse" data-target="#demo">
+                <h3>Réparation</h3>
+            </div>
+            <div class="serviceContent collapse" id="demo">
+                <p>Ne jetez pas votre machine car elle est en panne, faites la réparer. Parfois cela revient à moindre coûts pour prolonger significativement sa durée de vie.</p>
+            </div>
         </div>
+
         <div class="hardWareService">
-            <h3>Optimisation</h3>
-            <p>Vous avez une machine, mais ne savez pas comment en tirer un maximum de performances ?</p>
-            <p>Vous souhaitez améliorer votre configuration mais ne savez pas quelle pièce changer ?</p>
+            <div class="hardWareTitre optimisation" data-toggle="collapse" data-target="#demo2">
+                <h3>Optimisation</h3>
+            </div>
+            <div class="serviceContent collapse" id="demo2">
+                <p>Vous avez une machine, mais ne savez pas comment en tirer un maximum de performances ?</p>
+                <p>Vous souhaitez améliorer votre configuration actuelle mais ne savez pas quelle pièce changer ?</p>
+            </div>
         </div>
+        
         <div class="hardWareService">
-            <h3>Création</h3>
-            <p>Vous avez toujours voulu avoir une machine à votre image ?</p>
+            <div class="hardWareTitre creation" data-toggle="collapse" data-target="#demo3">
+                <h3>Création</h3>
+            </div>
+            <div class="serviceContent collapse" id="demo3">
+                <p>Vous avez toujours voulu avoir une machine à votre image, qui correspond parfaitement à vos besoins.</p>
+            </div>
         </div>
     </div>
     
@@ -118,6 +166,21 @@ require('includes/navbar.php');
 <?php
 require('includes/footer.php');
     ?>
+    
+    <script>
+        
+        $(document).ready(function() {
+            $(".hardWareService").click(function() {
+                var img = $(this).find('img.imgButton')[0]; // the actual DOM element for the image
+                if (img.src.indexOf('flecheDroite.png') != -1) {
+                    img.src = 'icones/flecheBas.png';
+                } else {
+                    img.src = 'icones/flecheDroite.png';
+                }
+            });
+        });
+        
+    </script>
 
 </body>
 
