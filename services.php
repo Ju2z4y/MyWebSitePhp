@@ -100,7 +100,20 @@ require('includes/navbar.php');
             <h3>Cloud</h3>
             <p>Vous rêvez d'accéder à vos données depuis l'exterieur, voir même d'avoir votre propre platforme de streaming.</p>
         </div>
+    </div>   
+    
+    <div class="bandeauImg">
+        <img class="" src="images/webDevBack.png" style="width:100%" />
     </div>    
+    <div class="hardware">
+        <h2>Développemen Web</h2>
+    </div>
+    <div class="hardWareBox">
+        <div class="hardWareService">
+            <h3>Création de site vitrine</h3>
+            <p>Vous souhaitez avoir votre propre site web.</p>
+        </div>        
+    </div>     
     
 <?php
 require('includes/footer.php');

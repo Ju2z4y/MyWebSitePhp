@@ -62,6 +62,11 @@ require('includes/navbar.php');
                 <div><img src="images/cv.jpg" style="width:280px;" /></div>
                 <p>Le premier onglet voit son apparition ! </p>
                 <p>Pour cette nouvelle version 2.0 de mybookjulieng.com, l'onglet Curriculum Vitae fait son apparition. Cet onglet représente mon CV en version dynamique à l'aide plusieurs parties déroulantes. Le but étant d'exploiter et pratiquer la nouvelle version de Bootstrap 4 avec du JQuery. Aussi, il proposera le téléchargement de ce CV version PDF.</p>
+                <h2>Deuxème onglet en construction</h2>
+                <h5>Mes services</h5>
+                <div><img src="images/services.jpg" style="width:280px;" /></div>
+                <p>Le second onglet voit son apparition ! </p>
+                <p>Pour cette nouvelle de mon site, je propose différents services qui seront bientôt détailés sur cette page.</p>                
             </div>
         </div>
     </div>
