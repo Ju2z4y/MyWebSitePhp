@@ -10,15 +10,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
+        
+        body {
+            width: 100%;
+            justify-content: center;
+        }
 
         .cvContainer {
             text-align: center;
-            width: 900px;
+            width: 100%;
         }
 
         .separateur {
-            margin-left: -50px;
-            width: 1000px;
+            
             height: 35px;
             flex-wrap: nowrap;
             vertical-align: middle;
@@ -32,9 +36,9 @@
         }
         
         .endTitre {
+            margin-left: 20px;
             background-color: gainsboro;
             width: 100%;
-            margin-left: 10px;
             border-radius: 8px 0px 0px 8px;
         }
         
@@ -45,16 +49,24 @@
         
         .photo {
             border-radius: 8px 8px 8px 8px;
+            float: right;
+        }
+        
+        .photoBox {
+            float: right;
+            margin-left: 30px;
         }
         
         .contact {
-            vertical-align: middle;
             padding-top: 35px;
         }
         
         .contactBox {
             margin-top: 20px;
             margin-bottom: 20px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         
         .conteneur {
@@ -87,6 +99,14 @@
             margin-bottom: 20px;
         }
         
+        .mySkill {
+            width: 90%;
+        }    
+        
+        .mySkill2 {
+            width: 60%;
+        }
+        
     </style>
 </head>
 
@@ -98,11 +118,15 @@ require('includes/navbar.php');
 
     <div class="container justify-content cvContainer">
 
-        <div class=" contactBox row">
-            <div class="contact col-10">
-                <strong>E-mail : </strong>julien.griffault90@gmail.com <strong>Tel : </strong>06 29 07 96 18
+        <div class="contactBox row">
+            <div class="contact">
+                <strong>E-mail : </strong>julien.griffault90@gmail.com 
             </div>
-            <div class="col-2"><img class="photo" src="images/photoID.png" alt="Logo" style="width:100px;"></div>
+            <div> <p> </p></div>
+            <div class="contact">
+                <strong>Tel : </strong>06 29 07 96 18
+            </div>
+            <div class="photoBox"><img class="photo" src="images/photoID.png" alt="Logo" style="width:100px;"></div>
         </div>
         
         <div class="center row togglingbuttons">
@@ -239,29 +263,29 @@ require('includes/navbar.php');
                     <a class="arrow" href="#skill1" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
                     <p class="titreSkill"><strong>JavaEE</strong></p>
                 </div>
-                <div class="progress bigBarre" style="width:450px;height:25px">
+                <div class="mySkill progress bigBarre" style="height:25px">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:70%;height:25px"></div>
                 </div>
                 <div id="skill1" class="collapse">
                     <ul>
                         <p><strong>FrameWorks :</strong></p>
                         <li>MyBatis
-                            <div class="progress" style="width:250px;height:10px">
+                            <div class="mySkill2 progress" style="height:10px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:30%;height:10px"></div>
                             </div>
                         </li>
                         <li>Flyway
-                            <div class="progress" style="width:250px;height:10px">
+                            <div class="mySkill2 progress" style="height:10px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:10%;height:10px"></div>
                             </div>
                         </li>
                         <li>SpockTesting
-                            <div class="progress" style="width:250px;height:10px">
+                            <div class="mySkill2 progress" style="height:10px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:85%;height:10px"></div>
                             </div>
                         </li>
                         <li>SpringMVC
-                            <div class="progress" style="width:250px;height:10px">
+                            <div class="mySkill2 progress" style="height:10px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:65%;height:10px"></div>
                             </div>
                         </li>                        
@@ -271,24 +295,24 @@ require('includes/navbar.php');
                     <a class="arrow" href="#skill2" data-toggle="collapse"><img class="imgButton" src="icones/flecheDroite.png" /></a>
                     <p class="titreSkill"><strong>HTML / CSS / JS</strong></p>
                 </div>
-                <div class="progress bigBarre" style="width:450px;height:25px">
+                <div class="mySkill progress bigBarre" style="height:25px">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:85%;height:25px"></div>
                 </div>
                 <div id="skill2" class="collapse">
                     <ul>
                         <p><strong>FrameWorks :</strong></p>
                         <li>JQuery
-                            <div class="progress" style="width:250px;height:10px">
+                            <div class="mySkill2 progress" style="height:10px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:70%;height:10px"></div>
                             </div>
                         </li>
                         <li>Bootstrap 3 & 4
-                            <div class="progress" style="width:250px;height:10px">
+                            <div class="mySkill2 progress" style="height:10px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:60%;height:10px"></div>
                             </div>
                         </li>
                         <li>Vue.js (futur)
-                            <div class="progress" style="width:250px;height:10px">
+                            <div class="mySkill2 progress" style="height:10px">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:8%;height:10px"></div>
                             </div>
                         </li>
