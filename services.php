@@ -59,11 +59,35 @@
             color: aliceblue;
         }
         
+        .assistance {
+            background-image: url(images/assistance.PNG);
+            background-size: cover;  
+            color: azure            
+        }
+        
         .creation {
             background-image: url(images/creation.jpg);
             background-size: cover;  
             color: aliceblue;            
         }
+        
+        .connected {
+            background-image: url(images/connected.PNG);
+            background-size: cover;  
+            color: black;             
+        }
+        
+        .cloud {
+            background-image: url(images/cloud.jpg);
+            background-size: cover;  
+            color: white;             
+        }
+        
+        .web {
+            background-image: url(images/web.jpg);
+            background-size: cover;  
+            color: black;             
+        }        
         
         .serviceContent {
             padding-top: 10px;
@@ -137,17 +161,32 @@ require('includes/navbar.php');
     </div>
     <div class="hardWareBox">
         <div class="hardWareService">
-            <h3>Assistance</h3>
-            <p>Vous n'arrivez pas à installer un préripherique, tel qu'une imprimante.</p>
-        </div>        
+            <div class="hardWareTitre assistance" data-toggle="collapse" data-target="#demo4">
+                <h3>Assistance à l'installation</h3>
+                <p>(peripherique/logiciel)</p>
+            </div>
+            <div class="serviceContent collapse" id="demo4">
+                <p>Vous n'arrivez pas à installer un préripherique, tel qu'une imprimante.</p>
+                <p>Ou un logiciel, tel que le pack Office.</p>
+            </div>
+        </div>    
         <div class="hardWareService">
-            <h3>Maison connectée</h3>
-            <p>Connectez les péripheriques de votre foyer pour les commander à distance.</p>
-        </div>
+            <div class="hardWareTitre connected" data-toggle="collapse" data-target="#demo5">
+                <h3>Maison connectée</h3>
+            </div>
+            <div class="serviceContent collapse" id="demo5">
+                <p>Connectez les péripheriques de votre foyer pour les commander à distance.</p>
+                <p>Par exemple avec la voix ou avec un smartphone.</p>
+            </div>
+        </div>       
         <div class="hardWareService">
-            <h3>Cloud</h3>
-            <p>Vous rêvez d'accéder à vos données depuis l'exterieur, voir même d'avoir votre propre platforme de streaming.</p>
-        </div>
+            <div class="hardWareTitre cloud" data-toggle="collapse" data-target="#demo6">
+                <h3>Cloud privé</h3>
+            </div>
+            <div class="serviceContent collapse" id="demo6">
+                <p>Vous rêvez d'accéder à vos données depuis l'exterieur, voir même d'avoir votre propre platforme de streaming.</p>
+            </div>
+        </div>         
     </div>   
     
     <div class="bandeauImg">
@@ -158,10 +197,15 @@ require('includes/navbar.php');
     </div>
     <div class="hardWareBox">
         <div class="hardWareService">
-            <h3>Création de site vitrine</h3>
-            <p>Vous souhaitez avoir votre propre site web.</p>
+            <div class="hardWareTitre web" data-toggle="collapse" data-target="#demo7">
+                <h3>Création d'un site web</h3>
+            </div>
+            <div class="serviceContent collapse" id="demo7">
+                <p>Vous souhaitez avoir votre propre site web.</p>
+            </div>
         </div>        
     </div>     
+    
     
 <?php
 require('includes/footer.php');
