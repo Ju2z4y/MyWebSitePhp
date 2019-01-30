@@ -42,8 +42,8 @@ require('includes/navbar.php');
 
     <div class="hardWareBox">
         <div class="hardWareService">
-            <div>
-                <div class="reparation" data-toggle="collapse" data-target="#demo">
+            <div class="clickable" data-toggle="collapse" data-target="#demo">
+                <div class="reparation">
                 </div>
                 <div class="hardWareTitre">
                     <h3>Réparation</h3>
@@ -56,8 +56,8 @@ require('includes/navbar.php');
         </div>
         
         <div class="hardWareService">
-            <div>
-                <div class="optimisation" data-toggle="collapse" data-target="#demo1">
+            <div class="clickable" data-toggle="collapse" data-target="#demo1">
+                <div class="optimisation">
                 </div>
                 <div class="hardWareTitre">
                     <h3>Optimisation</h3>
@@ -71,8 +71,8 @@ require('includes/navbar.php');
         </div> 
         
         <div class="hardWareService">
-            <div>
-                <div class="creation" data-toggle="collapse" data-target="#demo2">
+            <div class="clickable" data-toggle="collapse" data-target="#demo2">
+                <div class="creation">
                 </div>
                 <div class="hardWareTitre">
                     <h3>Création</h3>
@@ -99,8 +99,8 @@ require('includes/navbar.php');
     <div class="hardWareBox color">
         
         <div class="hardWareService">
-            <div>
-                <div class="assistance" data-toggle="collapse" data-target="#demo3">
+            <div class="clickable" data-toggle="collapse" data-target="#demo3">
+                <div class="assistance">
                 </div>
                 <div class="hardWareTitre">
                     <h3>Assistance à l'installation</h3>
@@ -115,8 +115,8 @@ require('includes/navbar.php');
         </div>          
         
         <div class="hardWareService">
-            <div>
-                <div class="connected" data-toggle="collapse" data-target="#demo4">
+            <div class="clickable" data-toggle="collapse" data-target="#demo4">
+                <div class="connected">
                 </div>
                 <div class="hardWareTitre">
                     <h3>Maison connectée</h3>
@@ -130,8 +130,8 @@ require('includes/navbar.php');
         </div>     
         
         <div class="hardWareService">
-            <div>
-                <div class="cloud" data-toggle="collapse" data-target="#demo5">
+            <div class="clickable" data-toggle="collapse" data-target="#demo5">
+                <div class="cloud">
                 </div>
                 <div class="hardWareTitre">
                     <h3>Cloud privé</h3>
@@ -157,8 +157,8 @@ require('includes/navbar.php');
     <div class="hardWareBox">
         
         <div class="hardWareService">
-            <div>
-                <div class="web" data-toggle="collapse" data-target="#demo6">
+            <div class="clickable" data-toggle="collapse" data-target="#demo6">
+                <div class="web">
                 </div>
                 <div class="hardWareTitre">
                     <h3>Création d'un site web</h3>

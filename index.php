@@ -55,7 +55,9 @@ require('includes/navbar.php');
                 <h5>Information, Jav 28, 2019</h5>
                 <div><img src="images/site-web-en-construction.jpg" style="width:380px;" /></div>
                 <p>Rédaction de la version du site 2.0</p>
-                <p>Site en construction depuis le 21 septembre, tout sera rédigé par mes soins à l'aide de différents outils comme HTML 5, CSS3, JQuery et Bootstrap 4. Il sera en constante évolution.</p>
+                <p>Site en construction depuis le 28 janvier, tout sera rédigé par mes soins à l'aide de différents outils comme HTML 5, CSS3, JQuery et Bootstrap 4. Il sera en constante évolution.</p>
+                <p>Ne pas utiliser WordPress est un choix de ma part, pour pouvoir afficher un site fait entièrement par mes soins.</p>
+                <p>NE RESTEZ PAS sur cette page ! c'est actuellement la moins travaillée...</p>
                 <br>
                 <h2>Nouvel onglet !</h2>
                 <h5>Curriculum Vitae</h5>
