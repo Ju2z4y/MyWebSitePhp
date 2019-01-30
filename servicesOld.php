@@ -42,47 +42,32 @@ require('includes/navbar.php');
 
     <div class="hardWareBox">
         <div class="hardWareService">
-            <div>
-                <div class="reparation" data-toggle="collapse" data-target="#demo">
-                </div>
-                <div class="hardWareTitre">
-                    <h3>Réparation</h3>
-                </div>
+            <div class="hardWareTitre reparation" data-toggle="collapse" data-target="#demo">
+                <h3>Réparation</h3>
             </div>
             <div class="serviceContent collapse" id="demo">
-                <div class="sepLine"></div>
                 <p>Ne jetez pas votre machine car elle est en panne, faites la réparer. Parfois cela revient à moindre coûts pour prolonger significativement sa durée de vie.</p>
+            </div>
+        </div>
+
+        <div class="hardWareService">
+            <div class="hardWareTitre optimisation" data-toggle="collapse" data-target="#demo2">
+                <h3>Optimisation</h3>
+            </div>
+            <div class="serviceContent collapse" id="demo2">
+                <p>Vous avez une machine, mais ne savez pas comment en tirer un maximum de performances ?</p>
+                <p>Vous souhaitez améliorer votre configuration actuelle mais ne savez pas quelle pièce changer ?</p>
             </div>
         </div>
         
         <div class="hardWareService">
-            <div>
-                <div class="optimisation" data-toggle="collapse" data-target="#demo1">
-                </div>
-                <div class="hardWareTitre">
-                    <h3>Optimisation</h3>
-                </div>
+            <div class="hardWareTitre creation" data-toggle="collapse" data-target="#demo3">
+                <h3>Création</h3>
             </div>
-            <div class="serviceContent collapse" id="demo1">
-                <div class="sepLine"></div>
-                <p>Vous avez une machine, mais ne savez pas comment en tirer un maximum de performances ?</p>
-                <p>Vous souhaitez améliorer votre configuration actuelle mais ne savez pas quelle pièce changer ?</p>
-            </div>
-        </div> 
-        
-        <div class="hardWareService">
-            <div>
-                <div class="creation" data-toggle="collapse" data-target="#demo2">
-                </div>
-                <div class="hardWareTitre">
-                    <h3>Création</h3>
-                </div>
-            </div>
-            <div class="serviceContent collapse" id="demo2">
-                <div class="sepLine"></div>
+            <div class="serviceContent collapse" id="demo3">
                 <p>Vous avez toujours voulu avoir une machine à votre image, qui correspond parfaitement à vos besoins.</p>
             </div>
-        </div>         
+        </div>
     </div>
 </div>   
 <div class="color">
@@ -97,52 +82,33 @@ require('includes/navbar.php');
     <p class="prelude color">Aussi, nous avons la chance, d'avoir aujourd'hui, la possibilité de commander une grande panoplie d'objets connectés à partir de notre smartphone ou même de notre voix. Allumer la lumière, éteindre la télévision. Cela nous facilite la vie, mais peut aussi d'être d'un grand secour pour une personne agées tombée et incapable de se relevée seule, par exemple</p>
 
     <div class="hardWareBox color">
-        
         <div class="hardWareService">
-            <div>
-                <div class="assistance" data-toggle="collapse" data-target="#demo3">
-                </div>
-                <div class="hardWareTitre">
-                    <h3>Assistance à l'installation</h3>
-                    <p>(peripherique/logiciel)</p>
-                </div>
+            <div class="hardWareTitre assistance" data-toggle="collapse" data-target="#demo4">
+                <h3>Assistance à l'installation</h3>
+                <p>(peripherique/logiciel)</p>
             </div>
-            <div class="serviceContent collapse" id="demo3">
-                <div class="sepLine"></div>
+            <div class="serviceContent collapse" id="demo4">
                 <p>Vous n'arrivez pas à installer un préripherique, tel qu'une imprimante.</p>
                 <p>Ou un logiciel, tel que le pack Office.</p>
             </div>
-        </div>          
-        
+        </div>    
         <div class="hardWareService">
-            <div>
-                <div class="connected" data-toggle="collapse" data-target="#demo4">
-                </div>
-                <div class="hardWareTitre">
-                    <h3>Maison connectée</h3>
-                </div>
+            <div class="hardWareTitre connected" data-toggle="collapse" data-target="#demo5">
+                <h3>Maison connectée</h3>
             </div>
-            <div class="serviceContent collapse" id="demo4">
-                <div class="sepLine"></div>
+            <div class="serviceContent collapse" id="demo5">
                 <p>Connectez les péripheriques de votre foyer pour les commander à distance.</p>
                 <p>Par exemple avec la voix ou avec un smartphone.</p>
             </div>
-        </div>     
-        
+        </div>       
         <div class="hardWareService">
-            <div>
-                <div class="cloud" data-toggle="collapse" data-target="#demo5">
-                </div>
-                <div class="hardWareTitre">
-                    <h3>Cloud privé</h3>
-                </div>
+            <div class="hardWareTitre cloud" data-toggle="collapse" data-target="#demo6">
+                <h3>Cloud privé</h3>
             </div>
-            <div class="serviceContent collapse" id="demo5">
-                <div class="sepLine"></div>
+            <div class="serviceContent collapse" id="demo6">
                 <p>Vous rêvez d'accéder à vos données depuis l'exterieur, voir même d'avoir votre propre platforme de streaming.</p>
             </div>
-        </div>          
-        
+        </div>         
     </div>   
 </div>    
     <div class="hardware">
@@ -155,21 +121,14 @@ require('includes/navbar.php');
     <p class="prelude">De nos jours, beaucoup d'activités aussi bien personnelles (loisirs), comme professionnelles nécessitent une visibilité sur le net. en ayant peu de connaissance dans ce domaine il peut être compliqué d'entreprendre la réalisation d'un site internet où de se faire une idée de combien cela pourrait coûter.</p> 
 
     <div class="hardWareBox">
-        
         <div class="hardWareService">
-            <div>
-                <div class="web" data-toggle="collapse" data-target="#demo6">
-                </div>
-                <div class="hardWareTitre">
-                    <h3>Création d'un site web</h3>
-                </div>
+            <div class="hardWareTitre web" data-toggle="collapse" data-target="#demo7">
+                <h3>Création d'un site web</h3>
             </div>
-            <div class="serviceContent collapse" id="demo6">
-                <div class="sepLine"></div>
+            <div class="serviceContent collapse" id="demo7">
                 <p>Vous souhaitez avoir votre propre site web.</p>
             </div>
-        </div>           
-      
+        </div>        
     </div>     
     
 <?php

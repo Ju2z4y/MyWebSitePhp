@@ -132,23 +132,13 @@ ul {
 }
 
 .hardWareTitre {
-    background-color: black;
-    color: aliceblue;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    border: solid black 1px;
+    height: 200px;
+    text-align: center; !important
 }
 
 .hardWareTitre:hover {
     cursor: pointer;
-    
-}
-
-.sepLine {
-    padding-top: 10px;
-    border-top: solid red 2px;
-    height: 10px;
-    margin-left: 40%;
-    margin-right: 40%;
 }
 
 .hardWareService {
@@ -165,61 +155,46 @@ ul {
 .reparation {
     background-image: url(images/reparation.jpg);
     background-size: cover;
-    height: 200px;
-    width: 100%;
-    border: solid black 1px;
 }
 
 .optimisation {
     background-image: url(images/opti.jpg);
     background-size: cover;  
-    height: 200px;
-    width: 100%;
-    border: solid black 1px;
-}
-
-.creation {
-    background-image: url(images/creation.jpg);
-    background-size: cover;  
-    height: 200px;
-    width: 100%;
-    border: solid black 1px;
+    color: aliceblue;
 }
 
 .assistance {
     background-image: url(images/assistance.PNG);
     background-size: cover;  
-    height: 200px;
-    width: 100%;
-    border: solid black 1px;         
+    color: azure            
 }
 
+.creation {
+    background-image: url(images/creation.jpg);
+    background-size: cover;  
+    color: aliceblue;            
+}
 
 .connected {
     background-image: url(images/connected.PNG);
     background-size: cover;  
-    height: 200px;
-    width: 100%;
-    border: solid black 1px;           
+    color: black;             
 }
 
 .cloud {
     background-image: url(images/cloud.jpg);
     background-size: cover;  
-    height: 200px;
-    width: 100%;
-    border: solid black 1px;        
+    color: white;             
 }
 
 .web {
     background-image: url(images/web.jpg);
     background-size: cover;  
-    height: 200px;
-    width: 100%;
-    border: solid black 1px;         
+    color: black;             
 }        
 
 .serviceContent {
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     border: solid black 1px;

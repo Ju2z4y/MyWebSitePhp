@@ -1,7 +1,7 @@
     <div class="jumbotron text-center col footerBox">
         <div class="row socialIcon">
             <img src="icones/socialBlack/facebook.png" />
-            <img src="icones/socialBlack/instagram.png" />
+            <a target="_blank" href="https://www.instagram.com/juliengft/?hl=fr"><img src="icones/socialBlack/instagram.png" /></a>
             <img src="icones/socialBlack/twitter.png" />
             <a target="_blank" href="https://www.youtube.com/playlist?list=PLUqJ_Xwv5W319XJQycQkB51Hengm3CdTh"><img src="icones/socialBlack/youtube.png" /></a>
             <img src="icones/socialBlack/whatsapp.png" />
