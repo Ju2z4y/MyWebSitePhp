@@ -10,93 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
-        .bandeauImg {
-           
-        }
         
-        .welcome {
-            text-align: center;
-        }
-        
-        .hardware {
-            text-align: center;
-            margin-top: 15px;
-            margin-bottom: 20px;
-        }
-        
-        .hardWareBox {
-            justify-content: space-around;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .hardWareTitre {
-            border: solid black 1px;
-            height: 200px;
-        }
-        
-        .hardWareService {
-            width: 20%;
-            text-align: center;
-            min-width: 330px;
-            padding: 5px;
-        }
-        
-        .hardWareService h3 {
-            font-weight: bold;
-        }
-        
-        .reparation {
-            background-image: url(images/reparation.jpg);
-            background-size: cover;
-        }
-        
-        .optimisation {
-            background-image: url(images/opti.jpg);
-            background-size: cover;  
-            color: aliceblue;
-        }
-        
-        .assistance {
-            background-image: url(images/assistance.PNG);
-            background-size: cover;  
-            color: azure            
-        }
-        
-        .creation {
-            background-image: url(images/creation.jpg);
-            background-size: cover;  
-            color: aliceblue;            
-        }
-        
-        .connected {
-            background-image: url(images/connected.PNG);
-            background-size: cover;  
-            color: black;             
-        }
-        
-        .cloud {
-            background-image: url(images/cloud.jpg);
-            background-size: cover;  
-            color: white;             
-        }
-        
-        .web {
-            background-image: url(images/web.jpg);
-            background-size: cover;  
-            color: black;             
-        }        
-        
-        .serviceContent {
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border: solid black 1px;
-            border-top: none;
-            font-style: italic;
-        }
+<?php include 'style.css'; ?>
         
     </style>
 </head>
@@ -108,20 +23,23 @@
     <?php
 require('includes/navbar.php');
 ?>
-
     
     <div class="welcome">
         <h1>Bienvenue</h1>
-        <p> Ici seront présentés mes services</p>
-        
+        <p class="prelude">Le monde du numérique est vaste et diversifé. Il peut être difficile sans avoir de connaissances spécifiques, de trouver une réponse simple à un besoin basic. Comme installer une imprimante, un software. Où même acheter un ordinateur à moindre coûts qui correspond à ses besoin. D'autant plus qu'à notre époque, il est difficile de ne pas avoir de besoins en relation direct avec le monde du numérique.</p>
+        <p class="prelude">C'est pourquoi je propose mes services pour répondre à plusieurs de ces besoins, du montage d'ordinateur, au dépannage logiciel. Ainsi que l'installation de reseaux et de plusieurs péripheriques connectés.</p>
     </div>
     
-    <div class="bandeauImg">
-        <img class="" src="images/hardWareBack.png" style="width:100%" />
-    </div>
+<div>
     <div class="hardware">
         <h2>HardWare</h2>
     </div>
+    <div class="bandeauImg">
+        <img class="" src="images/hardWareBack.png" style="width:100%" />
+    </div>
+    
+    <p class="prelude">La plus part des foyers, si ce n'est tous, sont équipés d'un ordianteur. Il peut arriver qu'il tombe en panne sans pour autant être obsolète. Aussi, il peut le devenir sans qu'il doit nécessaire de le changer. Changer une simple pièce pour permettre de renouveller sa durée de vie pour une durée significative, mais pour un coût moderé.</p>
+
     <div class="hardWareBox">
         <div class="hardWareService">
             <div class="hardWareTitre reparation" data-toggle="collapse" data-target="#demo">
@@ -151,15 +69,19 @@ require('includes/navbar.php');
             </div>
         </div>
     </div>
-    
-    
+</div>   
+<div class="color">
+    <div class="hardware color">
+        <h2>Internet des objets connectés</h2>
+    </div>    
     <div class="bandeauImg">
         <img class="" src="images/cloudBack.png" style="width:100%" />
     </div>    
-    <div class="hardware">
-        <h2>Internet des objets connectés</h2>
-    </div>
-    <div class="hardWareBox">
+    
+    <p class="prelude color">En dehors de l'ordinateur, notre maison est composée de plein d'autres péripheriques, comme les imprimantes, scanner et autre gadgets. Mais encore faut-il savoir les installer et les paramettrer. Et encore, après cela, leur utilité est elle correctement exploitée ? </p>
+    <p class="prelude color">Aussi, nous avons la chance, d'avoir aujourd'hui, la possibilité de commander une grande panoplie d'objets connectés à partir de notre smartphone ou même de notre voix. Allumer la lumière, éteindre la télévision. Cela nous facilite la vie, mais peut aussi d'être d'un grand secour pour une personne agées tombée et incapable de se relevée seule, par exemple</p>
+
+    <div class="hardWareBox color">
         <div class="hardWareService">
             <div class="hardWareTitre assistance" data-toggle="collapse" data-target="#demo4">
                 <h3>Assistance à l'installation</h3>
@@ -188,13 +110,16 @@ require('includes/navbar.php');
             </div>
         </div>         
     </div>   
-    
-    <div class="bandeauImg">
-        <img class="" src="images/webDevBack.png" style="width:100%" />
-    </div>    
+</div>    
     <div class="hardware">
         <h2>Développemen Web</h2>
     </div>
+    <div class="bandeauImg">
+        <img class="" src="images/webDevBack.png" style="width:100%" />
+    </div>  
+    
+    <p class="prelude">De nos jours, beaucoup d'activités aussi bien personnelles (loisirs), comme professionnelles nécessitent une visibilité sur le net. en ayant peu de connaissance dans ce domaine il peut être compliqué d'entreprendre la réalisation d'un site internet où de se faire une idée de combien cela pourrait coûter.</p> 
+
     <div class="hardWareBox">
         <div class="hardWareService">
             <div class="hardWareTitre web" data-toggle="collapse" data-target="#demo7">
@@ -205,7 +130,6 @@ require('includes/navbar.php');
             </div>
         </div>        
     </div>     
-    
     
 <?php
 require('includes/footer.php');

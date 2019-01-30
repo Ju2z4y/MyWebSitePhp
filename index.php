@@ -52,7 +52,7 @@ require('includes/navbar.php');
             </div>
             <div class="col-sm-8">
                 <h2>Site en construction</h2>
-                <h5>Information, Sept 21, 2018</h5>
+                <h5>Information, Jav 28, 2019</h5>
                 <div><img src="images/site-web-en-construction.jpg" style="width:380px;" /></div>
                 <p>Rédaction de la version du site 2.0</p>
                 <p>Site en construction depuis le 21 septembre, tout sera rédigé par mes soins à l'aide de différents outils comme HTML 5, CSS3, JQuery et Bootstrap 4. Il sera en constante évolution.</p>

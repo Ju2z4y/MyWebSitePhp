@@ -1,0 +1,235 @@
+/* PAGE CV */
+
+body {
+    width: 100%;
+    justify-content: center;
+}
+
+.cvContainer {
+    text-align: center;
+    width: 100%;
+}
+
+.separateur {
+
+    height: 35px;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+}
+
+.titre{
+    background-color: black;
+    color: white;
+    border-radius: 0px 8px 8px 0px;
+    padding-top: 4px;
+}
+
+.endTitre {
+    margin-left: 20px;
+    background-color: gainsboro;
+    width: 100%;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.conteneur {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    border-radius: 8px 8px 8px 8px;
+    float: right;
+}
+
+.photoBox {
+    float: right;
+    margin-left: 30px;
+}
+
+.contact {
+    padding-top: 35px;
+}
+
+.contactBox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.conteneur {
+    text-align: left;
+}
+
+.right {
+    float: right;
+}
+
+.titreSkill {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bigBarre {
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
+.center {
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.mySkill {
+    width: 90%;
+}    
+
+.mySkill2 {
+    width: 60%;
+}
+
+/* CV SERVICES */
+
+.bandeauImg {
+   margin-bottom: 30px;
+}
+
+.welcome {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background-color: rgb(233,236,239);
+}
+
+.color {
+    background-color: rgb(233,236,239);
+}
+
+.hardware {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    border-top: solid black 1px; 
+    padding-top: 20px;
+}
+
+.hardWareBox {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+
+}
+
+.hardWareTitre {
+    border: solid black 1px;
+    height: 200px;
+    text-align: center; !important
+}
+
+.hardWareTitre:hover {
+    cursor: pointer;
+}
+
+.hardWareService {
+    width: 30%;
+    text-align: center;
+    min-width: 280px;
+    padding: 5px;
+}
+
+.hardWareService h3 {
+    font-weight: bold;
+}
+
+.reparation {
+    background-image: url(images/reparation.jpg);
+    background-size: cover;
+}
+
+.optimisation {
+    background-image: url(images/opti.jpg);
+    background-size: cover;  
+    color: aliceblue;
+}
+
+.assistance {
+    background-image: url(images/assistance.PNG);
+    background-size: cover;  
+    color: azure            
+}
+
+.creation {
+    background-image: url(images/creation.jpg);
+    background-size: cover;  
+    color: aliceblue;            
+}
+
+.connected {
+    background-image: url(images/connected.PNG);
+    background-size: cover;  
+    color: black;             
+}
+
+.cloud {
+    background-image: url(images/cloud.jpg);
+    background-size: cover;  
+    color: white;             
+}
+
+.web {
+    background-image: url(images/web.jpg);
+    background-size: cover;  
+    color: black;             
+}        
+
+.serviceContent {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid black 1px;
+    border-top: none;
+    font-style: italic;
+    background-color: black;
+    color: aliceblue;
+}
+
+.prelude {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footerBox {
+    margin-bottom: 0;
+    
+    vertical-align: middle;
+}
+
+.iconeLiscence {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.socialIcon {
+    justify-content: space-around;
+}
+
+
+
+
+
+
