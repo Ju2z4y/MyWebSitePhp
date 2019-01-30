@@ -38,7 +38,7 @@ require('includes/navbar.php');
         <img class="" src="images/hardWareBack.png" style="width:100%" />
     </div>
     
-    <p class="prelude">La plus part des foyers, si ce n'est tous, sont équipés d'un ordianteur. Il peut arriver qu'il tombe en panne sans pour autant être obsolète. Aussi, il peut le devenir sans qu'il doit nécessaire de le changer. Changer une simple pièce pour permettre de renouveller sa durée de vie pour une durée significative, mais pour un coût moderé.</p>
+    <p class="prelude">La plus part des foyers, si ce n'est tous, sont équipés d'un ordianteur. Il peut arriver qu'il tombe en panne sans pour autant être obsolète. Aussi, il peut le devenir sans qu'il soit nécessaire de le changer. Changer une simple pièce pour permettre d'étendre sa durée de vie pour une durée significative, mais pour un coût moderé.</p>
 
     <div class="hardWareBox">
         <div class="hardWareService">
