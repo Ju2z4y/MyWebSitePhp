@@ -103,11 +103,24 @@ ul {
 }
 
 .welcome {
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
     background-color: rgb(233,236,239);
+    flex-wrap: wrap;
+}
+
+.map {
+    width: 328px;
+    height: 100%;  
+    margin-left: 15px; 
+}
+
+.intro {
+    text-align: center;
+    min-width: 328px;
+}
+
+.prelude {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .color {
@@ -229,11 +242,7 @@ ul {
     color: aliceblue;
 }
 
-.prelude {
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-}
+
 
 /* FOOTER */
 
@@ -252,6 +261,15 @@ ul {
 .socialIcon {
     justify-content: space-around;
 }
+
+/* INDEX */
+
+.fakeimg {
+    height: 200px;
+    background-image: url("images/site-web-en-construction.jpg");
+    background-size: 360px;
+}
+
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap 4 Website Example</title>
+    <title>Julien Griffault</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -24,10 +24,15 @@
 require('includes/navbar.php');
 ?>
     
-    <div class="welcome">
-        <h1>Bienvenue</h1>
-        <p class="prelude">Le monde du numérique est vaste et diversifé. Il peut être difficile sans avoir de connaissances spécifiques, de trouver une réponse simple à un besoin basic. Comme installer une imprimante, un software. Où même acheter un ordinateur à moindre coûts qui correspond à ses besoin. D'autant plus qu'à notre époque, il est difficile de ne pas avoir de besoins en relation direct avec le monde du numérique.</p>
-        <p class="prelude">C'est pourquoi je propose mes services pour répondre à plusieurs de ces besoins, du montage d'ordinateur, au dépannage logiciel. Ainsi que l'installation de reseaux et de plusieurs péripheriques connectés.</p>
+    <div class="welcome row">
+        <div>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10516.376207627984!2d2.307921695450832!3d48.78009466847708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6712a13518e05%3A0x40b82c3688b3e80!2s92340+Bourg-la-Reine!5e0!3m2!1sfr!2sfr!4v1548945370813" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="intro">
+            <h1>Bienvenue</h1>
+            <p class="prelude">Le monde du numérique est vaste et diversifé. Il peut être difficile sans avoir de connaissances spécifiques, de trouver une réponse simple à un besoin basic. Comme installer une imprimante, un software. Où même acheter un ordinateur à moindre coûts qui correspond à ses besoin. D'autant plus qu'à notre époque, il est difficile de ne pas avoir de besoins en relation direct avec le monde du numérique.</p>
+            <p class="prelude">C'est pourquoi je propose mes services pour répondre à plusieurs de ces besoins, du montage d'ordinateur, au dépannage logiciel. Ainsi que l'installation de reseaux et de plusieurs péripheriques connectés.</p>
+        </div>
     </div>
     
 <div>

@@ -1,7 +1,4 @@
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>MyBook Julien Griffault</h1>
-  <p>Bienvenue sur mon site de présentation</p> 
-</div>   
+ 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a class="navbar-brand" href="index.php">
             <img src="images/photoID.png" alt="Logo" style="width:40px;">
