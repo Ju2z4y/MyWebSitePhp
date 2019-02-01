@@ -332,6 +332,7 @@ ul {
     border: solid black 1px;
     background-color: rgb(233,236,239);
     padding: 10px;
+    border-radius: 12px 12px 12px 12px;
 }
 
 .temoignageText {
@@ -386,7 +387,12 @@ window.scrollTop > x
     
     .contact {
         padding: 0px;
-    }    
+    }   
+    
+    .temoignagesBox {
+        width: 100%;
+        margin-bottom: 25px;
+    }
     
     .hardWareTitre h3{
         font-size: 18px;

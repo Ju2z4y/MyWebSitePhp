@@ -43,16 +43,32 @@ require('includes/navbar.php');
         <h2>ils l'ont déjà fait : </h2>
         <div class="temoignagesList">
             <div class="temoignagesBox">
-                <h4>Méderick Delos</h4>
+                <h4>Méderick</h4>
                 <div class="temoignageText">
+                    <p class="temoignageDate">04 jan 19</p>
                     <img class="quote" src="images/quote12.png" width="20"/>
                     <p class="testouille">J'avais besoin d'un PC de gamer à un prix correspondant à mon budget pou run maximum de performances, je suis très content du résultat, je recommande le travail de julien et le remercie encore !</p>
                     <img class="quote" src="images/quote12.png" width="20"/>
-                    <p class="temoignageDate">04 dec 19</p>
                 </div>
             </div>
-            <div class="temoignagesBox">EXEMPLE</div>
-            <div class="temoignagesBox">EXEMPLE</div>
+            <div class="temoignagesBox">
+                <h4>Vincent</h4>
+                <div class="temoignageText">
+                    <p class="temoignageDate">15 dec 18</p>
+                    <img class="quote" src="images/quote12.png" width="20"/>
+                    <p class="testouille">Mon ordinateur portable est tombé en panne, Julien a pu le réparer le temps de son week-end, et je l'ai même récuperé plus performant ! Merci !</p>
+                    <img class="quote" src="images/quote12.png" width="20"/>
+                </div>
+            </div>
+            <div class="temoignagesBox">
+                <h4>Chantal</h4>
+                <div class="temoignageText">
+                    <p class="temoignageDate">21 sep 18</p>
+                    <img class="quote" src="images/quote12.png" width="20"/>
+                    <p class="testouille">J'avais une imprimante wiFi a installer, et mon ordinateur portable devenait très lent. Julien s'est déplacé à domicile, il s'est occupé de le "nettoyer" et à installer l'imprimante.</p>
+                    <img class="quote" src="images/quote12.png" width="20"/>
+                </div>
+            </div>
         </div>
     </div>
 </div>
