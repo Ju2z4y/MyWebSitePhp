@@ -6,15 +6,18 @@
 
         <div class="" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="curriculum.php">Curriculum Vitae</a>
-                </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="services.php">Mes services</a>
                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact.php">Contactez moi</a>
+                </li>                
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Mes réalisation</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curriculum.php">Curriculum Vitae</a>
+                </li>                
             </ul>
         </div>
     </nav>

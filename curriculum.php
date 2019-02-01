@@ -25,11 +25,11 @@ require('includes/navbar.php');
     <div class="container justify-content cvContainer">
 
         <div class="contactBox row">
-            <div class="contact">
+            <div class="contactCV">
                 <strong>E-mail : </strong>julien.griffault90@gmail.com 
             </div>
             <div> <p> </p></div>
-            <div class="contact">
+            <div class="contactCV">
                 <strong>Tel : </strong>06 29 07 96 18
             </div>
             <div class="photoBox"><img class="photo" src="images/photoID.png" alt="Logo" style="width:100px;"></div>
